@@ -1,0 +1,4 @@
+C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.AssemblyInfoInputs.cache
+C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.AssemblyInfo.cs
+C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.csproj.CoreCompileInputs.cache
