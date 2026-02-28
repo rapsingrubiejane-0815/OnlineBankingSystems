@@ -1,101 +1,143 @@
-﻿namespace OnlineBankingSystem
+﻿using System;
+
+public class HelloWorld
 {
-    internal class Program
+    static double balance = 1000; 
+
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int choice;
+
+        Console.WriteLine("-----ONLINE BANKING SYSTEM-----\n");
+
+        do
         {
-            double balance, deposit, sendAmount, receive;
-            int choice;
-            string recipient;
+            DisplayMenu();
+            Console.Write("Enter a number from 1-6: ");
+            choice = Convert.ToInt32(Console.ReadLine());
 
-            do
+            switch (choice)
             {
-                Console.WriteLine("\n===== SIMPLE BANKING SYSTEM =====");
-                Console.WriteLine("1 - Deposit");
-                Console.WriteLine("2 - Withdraw");
-                Console.WriteLine("3 - Send Money");
-                Console.WriteLine("4 - Receive Money");
-                
+                case 1:
+                    Deposit();
+                    break;
 
-                choice = Convert.ToInt32(Console.ReadLine());
+                case 2:
+                    Withdraw();
+                    break;
 
-                switch (choice)
-                {
-                    case 1:
-                        Console.Write("Enter amount to deposit: ");
-                        deposit = Convert.ToDouble(Console.ReadLine());
+                case 3:
+                    CheckBalance();
+                    break;
 
-                        if (deposit > 0)
-                        {
-                            balance += deposit;
-                            Console.WriteLine("Deposit successful!");
-                            Console.WriteLine("Updated Balance: ₱" + balance);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid amount!");
-                        }
-                        break;
+                case 4:
+                    SendMoney();
+                    break;
 
-                    case 2:
-                        Console.Write("Enter amount to withdraw: ");
-                        double withdraw = Convert.ToDouble(Console.ReadLine());
+                case 5:
+                    ReceiveMoney();
+                    break;
 
-                        if (withdraw > 0 && withdraw <= balance)
-                        {
-                            balance -= withdraw;
-                            Console.WriteLine("Withdrawal successful!");
-                            Console.WriteLine("Updated Balance: ₱" + balance);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid Amount!");
-                        }
-                        break;
+                case 6:
+                    Console.WriteLine("Thank you for Banking with us");
+                    break;
 
-                    case 3:
-                        Console.Write("Enter recipient name: ");
-                        recipient = Console.ReadLine();
-
-                        Console.Write("Enter amount to send: ");
-                        sendAmount = Convert.ToDouble(Console.ReadLine());
-
-                        if (sendAmount > 0 && sendAmount <= balance)
-                        {
-                            balance -= sendAmount;
-                            Console.WriteLine("Money sent to " + recipient + " successfully!");
-                            Console.WriteLine("Updated Balance: ₱" + balance);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid amount!");
-                        }
-                        break;
-
-                    case 4:
-                        Console.Write("Enter amount received: ");
-                        receive = Convert.ToDouble(Console.ReadLine());
-
-                        if (receive > 0)
-                        {
-                            balance += receive;
-                            Console.WriteLine("Money received successfully!");
-                            Console.WriteLine("Updated Balance: ₱" + balance);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid amount!");
-                        }
-                        break;
-
-                    default:
-                        Console.WriteLine("Invalid choice!");
-                        break;
-                }
-
-            } while (choice != 4;){
-
+                default:
+                    Console.WriteLine("Invalid Choice\n");
+                    break;
             }
+
+        } while (choice != 6);
+    }
+
+    
+    public static void DisplayMenu()
+    {
+        Console.WriteLine("\n1. Deposit");
+        Console.WriteLine("2. Withdraw");
+        Console.WriteLine("3. Check Balance");
+        Console.WriteLine("4. Send Money");
+        Console.WriteLine("5. Receive Money");
+        Console.WriteLine("6. Exit");
+    }
+
+  
+    public static void Deposit()
+    {
+        Console.Write("Enter amount to Deposit: ");
+        double amount = Convert.ToDouble(Console.ReadLine());
+
+        if (amount > 0)
+        {
+            balance += amount;
+            Console.WriteLine("Amount Deposited Successfully");
+        }
+        else
+        {
+            Console.WriteLine("Invalid Amount");
+        }
+    }
+
+  
+    public static void Withdraw()
+    {
+        Console.Write("Enter amount to Withdraw: ");
+        double amount = Convert.ToDouble(Console.ReadLine());
+
+        if (amount > 0 && amount <= balance)
+        {
+            balance -= amount;
+            Console.WriteLine("Withdrawal Successfully");
+        }
+        else
+        {
+            Console.WriteLine("Insufficient Balance or Invalid Amount");
+        }
+    }
+
+ 
+    public static void CheckBalance()
+    {
+        Console.WriteLine("Current Balance: Php " + balance);
+    }
+
+    
+    public static void SendMoney()
+    {
+        Console.Write("Enter recipient name: ");
+        string recipient = Console.ReadLine();
+
+        Console.Write("Enter amount to Send: ");
+        double amount = Convert.ToDouble(Console.ReadLine());
+
+        if (amount > 0 && amount <= balance)
+        {
+            balance -= amount;
+            Console.WriteLine("Successfully sent Php " + amount + " to " + recipient);
+        }
+        else
+        {
+            Console.WriteLine("Insufficient Balance or Invalid Amount");
+        }
+    }
+
+                    
+    public static void ReceiveMoney()
+    {
+        Console.Write("Enter sender name: ");
+        string sender = Console.ReadLine();
+
+        Console.Write("Enter amount received: ");
+        double amount = Convert.ToDouble(Console.ReadLine());
+
+        if (amount > 0)
+        {
+            balance += amount;
+            Console.WriteLine("Successfully received Php " + amount + " from " + sender);
+        }
+        else
+        {
+            Console.WriteLine("Invalid Amount");
         }
     }
 }
