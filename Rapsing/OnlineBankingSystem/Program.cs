@@ -138,6 +138,7 @@ public class HelloWorld
         else
         {
             Console.WriteLine("Invalid Amount");
+            Console.WriteLine("rapsing");
         }
     }
 }
