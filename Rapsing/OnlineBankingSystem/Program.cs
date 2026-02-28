@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class HelloWorld
+public class OnlineBankingSystems
 {
     static double balance = 1000; 
 
