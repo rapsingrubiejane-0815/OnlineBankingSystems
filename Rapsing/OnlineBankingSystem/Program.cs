@@ -1,10 +1,11 @@
 ﻿using System;
+using OnlineBankingSystemAppService;
 
-public class OnlineBankingSystems
+public class Program
 {
-    static double balance = 1000; 
+    static BankBusiness bank = new BankBusiness();
 
-    public static void Main(string[] args)
+    public static void Main()
     {
         int choice;
 
@@ -19,23 +20,35 @@ public class OnlineBankingSystems
             switch (choice)
             {
                 case 1:
-                    Deposit();
+                    Console.Write("Enter amount to Deposit: ");
+                    double deposit = Convert.ToDouble(Console.ReadLine());
+                    bank.Deposit(deposit);
                     break;
 
                 case 2:
-                    Withdraw();
+                    Console.Write("Enter amount to Withdraw: ");
+                    double withdraw = Convert.ToDouble(Console.ReadLine());
+                    bank.Withdraw(withdraw);
                     break;
 
                 case 3:
-                    CheckBalance();
+                    bank.CheckBalance();
                     break;
 
                 case 4:
-                    SendMoney();
+                    Console.Write("Enter recipient name: ");
+                    string recipient = Console.ReadLine();
+                    Console.Write("Enter amount to Send: ");
+                    double send = Convert.ToDouble(Console.ReadLine());
+                    bank.SendMoney(recipient, send);
                     break;
 
                 case 5:
-                    ReceiveMoney();
+                    Console.Write("Enter sender name: ");
+                    string sender = Console.ReadLine();
+                    Console.Write("Enter amount received: ");
+                    double receive = Convert.ToDouble(Console.ReadLine());
+                    bank.ReceiveMoney(sender, receive);
                     break;
 
                 case 6:
@@ -43,14 +56,13 @@ public class OnlineBankingSystems
                     break;
 
                 default:
-                    Console.WriteLine("Invalid Choice\n");
+                    Console.WriteLine("Invalid Choice");
                     break;
             }
 
         } while (choice != 6);
     }
 
-    
     public static void DisplayMenu()
     {
         Console.WriteLine("\n1. Deposit");
@@ -59,86 +71,5 @@ public class OnlineBankingSystems
         Console.WriteLine("4. Send Money");
         Console.WriteLine("5. Receive Money");
         Console.WriteLine("6. Exit");
-    }
-
-  
-    public static void Deposit()
-    {
-        Console.Write("Enter amount to Deposit: ");
-        double amount = Convert.ToDouble(Console.ReadLine());
-
-        if (amount > 0)
-        {
-            balance += amount;
-            Console.WriteLine("Amount Deposited Successfully");
-        }
-        else
-        {
-            Console.WriteLine("Invalid Amount");
-        }
-    }
-
-  
-    public static void Withdraw()
-    {
-        Console.Write("Enter amount to Withdraw: ");
-        double amount = Convert.ToDouble(Console.ReadLine());
-
-        if (amount > 0 && amount <= balance)
-        {
-            balance -= amount;
-            Console.WriteLine("Withdrawal Successfully");
-        }
-        else
-        {
-            Console.WriteLine("Insufficient Balance or Invalid Amount");
-        }
-    }
-
- 
-    public static void CheckBalance()
-    {
-        Console.WriteLine("Current Balance: Php " + balance);
-    }
-
-    
-    public static void SendMoney()
-    {
-        Console.Write("Enter recipient name: ");
-        string recipient = Console.ReadLine();
-
-        Console.Write("Enter amount to Send: ");
-        double amount = Convert.ToDouble(Console.ReadLine());
-
-        if (amount > 0 && amount <= balance)
-        {
-            balance -= amount;
-            Console.WriteLine("Successfully sent Php " + amount + " to " + recipient);
-        }
-        else
-        {
-            Console.WriteLine("Insufficient Balance or Invalid Amount");
-        }
-    }
-
-                    
-    public static void ReceiveMoney()
-    {
-        Console.Write("Enter sender name: ");
-        string sender = Console.ReadLine();
-
-        Console.Write("Enter amount received: ");
-        double amount = Convert.ToDouble(Console.ReadLine());
-
-        if (amount > 0)
-        {
-            balance += amount;
-            Console.WriteLine("Successfully received Php " + amount + " from " + sender);
-        }
-        else
-        {
-            Console.WriteLine("Invalid Amount");
-            Console.WriteLine("rapsing");
-        }
     }
 }

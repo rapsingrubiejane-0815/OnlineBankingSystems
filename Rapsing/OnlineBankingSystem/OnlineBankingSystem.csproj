@@ -7,4 +7,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="OnlineBankingSystemAppService\**" />
+    <Compile Remove="OnlineBankingSystemDataService\**" />
+    <Compile Remove="OnlineBankingSystemModels\**" />
+    <EmbeddedResource Remove="OnlineBankingSystemAppService\**" />
+    <EmbeddedResource Remove="OnlineBankingSystemDataService\**" />
+    <EmbeddedResource Remove="OnlineBankingSystemModels\**" />
+    <None Remove="OnlineBankingSystemAppService\**" />
+    <None Remove="OnlineBankingSystemDataService\**" />
+    <None Remove="OnlineBankingSystemModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="OnlineBankingSystemAppService\OnlineBankingSystemAppService.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OnlineBankingSystem/1.0.0": {
+        "dependencies": {
+          "OnlineBankingSystemAppService": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBankingSystem.dll": {}
+        }
+      },
+      "OnlineBankingSystemAppService/1.0.0": {
+        "dependencies": {
+          "OnlineBankingSystemDataService": "1.0.0",
+          "OnlineBankingSystemModels": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBankingSystemAppService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OnlineBankingSystemDataService/1.0.0": {
+        "dependencies": {
+          "OnlineBankingSystemModels": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBankingSystemDataService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OnlineBankingSystemModels/1.0.0": {
+        "runtime": {
+          "OnlineBankingSystemModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineBankingSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBankingSystemAppService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBankingSystemDataService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBankingSystemModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

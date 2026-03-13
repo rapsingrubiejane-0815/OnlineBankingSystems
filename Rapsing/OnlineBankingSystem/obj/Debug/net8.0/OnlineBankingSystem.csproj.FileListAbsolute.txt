@@ -2,3 +2,26 @@ C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\
 C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.AssemblyInfoInputs.cache
 C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.AssemblyInfo.cs
 C:\Users\PUP-CITE-L1PC03\Downloads\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.csproj.AssemblyReference.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.AssemblyInfoInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.AssemblyInfo.cs
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.sourcelink.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystem.exe
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystem.deps.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystem.runtimeconfig.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystem.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystem.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystemAppService.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystemDataService.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystemModels.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystemAppService.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystemDataService.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\bin\Debug\net8.0\OnlineBankingSystemModels.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBa.9F1512F5.Up2Date
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\refint\OnlineBankingSystem.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\OnlineBankingSystem.genruntimeconfig.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\obj\Debug\net8.0\ref\OnlineBankingSystem.dll

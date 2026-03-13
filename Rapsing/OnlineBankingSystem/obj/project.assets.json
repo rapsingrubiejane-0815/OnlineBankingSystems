@@ -1,26 +1,87 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "OnlineBankingSystemAppService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "OnlineBankingSystemDataService": "1.0.0",
+          "OnlineBankingSystemModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBankingSystemAppService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBankingSystemAppService.dll": {}
+        }
+      },
+      "OnlineBankingSystemDataService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "OnlineBankingSystemModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBankingSystemDataService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBankingSystemDataService.dll": {}
+        }
+      },
+      "OnlineBankingSystemModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/OnlineBankingSystemModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBankingSystemModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "OnlineBankingSystemAppService/1.0.0": {
+      "type": "project",
+      "path": "OnlineBankingSystemAppService/OnlineBankingSystemAppService.csproj",
+      "msbuildProject": "OnlineBankingSystemAppService/OnlineBankingSystemAppService.csproj"
+    },
+    "OnlineBankingSystemDataService/1.0.0": {
+      "type": "project",
+      "path": "OnlineBankingSystemDataService/OnlineBankingSystemDataService.csproj",
+      "msbuildProject": "OnlineBankingSystemDataService/OnlineBankingSystemDataService.csproj"
+    },
+    "OnlineBankingSystemModels/1.0.0": {
+      "type": "project",
+      "path": "OnlineBankingSystemModels/OnlineBankingSystemModels.csproj",
+      "msbuildProject": "OnlineBankingSystemModels/OnlineBankingSystemModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "OnlineBankingSystemAppService >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\PUP-CITE-L1PC03\\.nuget\\packages\\": {}
+    "C:\\Users\\Raul Alvarez\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PUP-CITE-L1PC03\\Downloads\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
       "projectName": "OnlineBankingSystem",
-      "projectPath": "C:\\Users\\PUP-CITE-L1PC03\\Downloads\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
-      "packagesPath": "C:\\Users\\PUP-CITE-L1PC03\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PUP-CITE-L1PC03\\Downloads\\Rapsing\\OnlineBankingSystem\\obj\\",
+      "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
+      "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PUP-CITE-L1PC03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +94,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj": {
+              "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -45,7 +110,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -66,7 +132,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

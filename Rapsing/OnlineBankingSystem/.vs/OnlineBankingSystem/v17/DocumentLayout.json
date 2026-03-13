@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A4FA42E-5B1F-4925-A160-FD9E8E8BED1B}|OnlineBankingSystem.csproj|c:\\users\\raul alvarez\\onedrive\\documents\\github\\onlinebankingsystems\\rapsing\\onlinebankingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A4FA42E-5B1F-4925-A160-FD9E8E8BED1B}|OnlineBankingSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510A2AEA-640D-4ABC-B71D-44B5A101FF5A}|OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj|c:\\users\\raul alvarez\\onedrive\\documents\\github\\onlinebankingsystems\\rapsing\\onlinebankingsystem\\onlinebankingsystemappservice\\bankbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510A2AEA-640D-4ABC-B71D-44B5A101FF5A}|OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj|solutionrelative:onlinebankingsystemappservice\\bankbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|c:\\users\\raul alvarez\\onedrive\\documents\\github\\onlinebankingsystems\\rapsing\\onlinebankingsystem\\onlinebankingsystemdataservice\\bankdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|solutionrelative:onlinebankingsystemdataservice\\bankdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662EF4D7-F3DC-4B6E-A65C-81E6992F5148}|OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj|c:\\users\\raul alvarez\\onedrive\\documents\\github\\onlinebankingsystems\\rapsing\\onlinebankingsystem\\onlinebankingsystemmodels\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662EF4D7-F3DC-4B6E-A65C-81E6992F5148}|OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj|solutionrelative:onlinebankingsystemmodels\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T01:58:39.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BankBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\BankBusiness.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemAppService\\BankBusiness.cs",
+              "ToolTip": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\BankBusiness.cs",
+              "RelativeToolTip": "OnlineBankingSystemAppService\\BankBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T01:55:44.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BankData.cs",
+              "DocumentMoniker": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\BankData.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemDataService\\BankData.cs",
+              "ToolTip": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\BankData.cs",
+              "RelativeToolTip": "OnlineBankingSystemDataService\\BankData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T01:52:58.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\BankAccount.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemModels\\BankAccount.cs",
+              "ToolTip": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\BankAccount.cs",
+              "RelativeToolTip": "OnlineBankingSystemModels\\BankAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T01:51:46.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
