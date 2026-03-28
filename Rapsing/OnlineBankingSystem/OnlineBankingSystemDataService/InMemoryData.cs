@@ -1,7 +1,7 @@
 ﻿using OnlineBankingSystemModels;
 namespace OnlineBankingSystemDataService
 {
-    public class BankData
+    public class InMemoryData
     {
         public BankAccount account = new BankAccount();
 

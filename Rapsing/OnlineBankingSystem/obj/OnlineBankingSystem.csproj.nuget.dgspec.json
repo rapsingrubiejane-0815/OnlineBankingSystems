@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj": {}
+    "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj": {
+    "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
         "projectName": "OnlineBankingSystem",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\obj\\",
+        "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
+        "packagesPath": "C:\\Users\\Jonielyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jonielyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,80 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj",
-        "projectName": "OnlineBankingSystemAppService",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj"
+              "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj": {
+                "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj"
               },
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj"
+              "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
+                "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj"
               }
             }
           }
@@ -120,11 +47,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -141,25 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj": {
+    "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj",
-        "projectName": "OnlineBankingSystemDataService",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\obj\\",
+        "projectUniqueName": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj",
+        "projectName": "OnlineBankingSystemAppService",
+        "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj",
+        "packagesPath": "C:\\Users\\Jonielyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jonielyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,8 +102,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj"
+              "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj": {
+                "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj"
+              },
+              "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
+                "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj"
               }
             }
           }
@@ -189,7 +121,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -210,25 +142,92 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
+    "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj",
-        "projectName": "OnlineBankingSystemModels",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\OnlineBankingSystems\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\obj\\",
+        "projectUniqueName": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj",
+        "projectName": "OnlineBankingSystemDataService",
+        "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj",
+        "packagesPath": "C:\\Users\\Jonielyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jonielyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
+                "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj",
+        "projectName": "OnlineBankingSystemModels",
+        "projectPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj",
+        "packagesPath": "C:\\Users\\Jonielyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jonielyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -254,7 +253,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -270,12 +269,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

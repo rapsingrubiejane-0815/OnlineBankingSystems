@@ -8,6 +8,7 @@ namespace OnlineBankingSystemModels
 {
     public class BankAccount
     {
-        public double Balance { get; set; } = 1000;
+        public double Balance { get; set; }
+        //public double Amount {  get; set; }
     }
 }

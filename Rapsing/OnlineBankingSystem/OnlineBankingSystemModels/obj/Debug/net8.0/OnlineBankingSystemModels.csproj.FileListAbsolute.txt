@@ -10,3 +10,15 @@ C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\Onl
 C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\refint\OnlineBankingSystemModels.dll
 C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.pdb
 C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\OnlineBankingSystems\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\ref\OnlineBankingSystemModels.dll
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\bin\Debug\net8.0\OnlineBankingSystemModels.deps.json
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\bin\Debug\net8.0\OnlineBankingSystemModels.dll
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\bin\Debug\net8.0\OnlineBankingSystemModels.pdb
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.AssemblyInfoInputs.cache
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.AssemblyInfo.cs
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.csproj.CoreCompileInputs.cache
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.sourcelink.json
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.dll
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\refint\OnlineBankingSystemModels.dll
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\OnlineBankingSystemModels.pdb
+C:\Users\Jonielyn\OneDrive\Documents\OnlineBankingSystem\Rapsing\OnlineBankingSystem\OnlineBankingSystemModels\obj\Debug\net8.0\ref\OnlineBankingSystemModels.dll

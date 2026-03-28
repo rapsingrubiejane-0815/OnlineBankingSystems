@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemdataservice\\onlinebankingjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|solutionrelative:onlinebankingsystemdataservice\\onlinebankingjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemdataservice\\onlinebankingdbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|solutionrelative:onlinebankingsystemdataservice\\onlinebankingdbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemdataservice\\ionlinebankingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|solutionrelative:onlinebankingsystemdataservice\\ionlinebankingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemdataservice\\inmemorydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|solutionrelative:onlinebankingsystemdataservice\\inmemorydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemdataservice\\bankingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ADC411-7EE6-4F92-B22D-A8A3CE2689E8}|OnlineBankingSystemDataService\\OnlineBankingSystemDataService.csproj|solutionrelative:onlinebankingsystemdataservice\\bankingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510A2AEA-640D-4ABC-B71D-44B5A101FF5A}|OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemappservice\\bankbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510A2AEA-640D-4ABC-B71D-44B5A101FF5A}|OnlineBankingSystemAppService\\OnlineBankingSystemAppService.csproj|solutionrelative:onlinebankingsystemappservice\\bankbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662EF4D7-F3DC-4B6E-A65C-81E6992F5148}|OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystemmodels\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662EF4D7-F3DC-4B6E-A65C-81E6992F5148}|OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj|solutionrelative:onlinebankingsystemmodels\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A4FA42E-5B1F-4925-A160-FD9E8E8BED1B}|OnlineBankingSystem.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A4FA42E-5B1F-4925-A160-FD9E8E8BED1B}|OnlineBankingSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A4FA42E-5B1F-4925-A160-FD9E8E8BED1B}|OnlineBankingSystem.csproj|c:\\users\\jonielyn\\onedrive\\documents\\onlinebankingsystem\\rapsing\\onlinebankingsystem\\onlinebankingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4A4FA42E-5B1F-4925-A160-FD9E8E8BED1B}|OnlineBankingSystem.csproj|solutionrelative:onlinebankingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InMemoryData.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\InMemoryData.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemDataService\\InMemoryData.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\InMemoryData.cs",
+              "RelativeToolTip": "OnlineBankingSystemDataService\\InMemoryData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T06:37:23.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IOnlineBankingDataService.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\IOnlineBankingDataService.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemDataService\\IOnlineBankingDataService.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\IOnlineBankingDataService.cs",
+              "RelativeToolTip": "OnlineBankingSystemDataService\\IOnlineBankingDataService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T09:28:37.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OnlineBankingDbData.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingDbData.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemDataService\\OnlineBankingDbData.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingDbData.cs",
+              "RelativeToolTip": "OnlineBankingSystemDataService\\OnlineBankingDbData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T08:35:35.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OnlineBankingJson.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingJson.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemDataService\\OnlineBankingJson.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\OnlineBankingJson.cs",
+              "RelativeToolTip": "OnlineBankingSystemDataService\\OnlineBankingJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T14:59:11.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BankingDataService.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\BankingDataService.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemDataService\\BankingDataService.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService\\BankingDataService.cs",
+              "RelativeToolTip": "OnlineBankingSystemDataService\\BankingDataService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T11:25:51.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BankBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\BankBusiness.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemAppService\\BankBusiness.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService\\BankBusiness.cs",
+              "RelativeToolTip": "OnlineBankingSystemAppService\\BankBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T06:37:23.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\BankAccount.cs",
+              "RelativeDocumentMoniker": "OnlineBankingSystemModels\\BankAccount.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\BankAccount.cs",
+              "RelativeToolTip": "OnlineBankingSystemModels\\BankAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T06:37:23.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T06:37:23.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OnlineBankingSystem.csproj",
+              "DocumentMoniker": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
+              "RelativeDocumentMoniker": "OnlineBankingSystem.csproj",
+              "ToolTip": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystem.csproj",
+              "RelativeToolTip": "OnlineBankingSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-21T08:47:45.926Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

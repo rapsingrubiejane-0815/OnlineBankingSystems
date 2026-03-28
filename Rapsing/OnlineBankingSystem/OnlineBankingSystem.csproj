@@ -20,7 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="OnlineBankingSystemAppService\OnlineBankingSystemAppService.csproj" />
+    <ProjectReference Include="OnlineBankingSystemModels\OnlineBankingSystemModels.csproj" />
   </ItemGroup>
 
 </Project>
