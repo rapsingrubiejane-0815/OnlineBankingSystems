@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace OnlineBankingSystemDataService 
+namespace OnlineBankingSystemDataService
 {
     public class OnlineBankingJson : IOnlineBankingDataService
     {
@@ -26,7 +26,7 @@ namespace OnlineBankingSystemDataService
 
             if (banking.Count <= 0)
             {
-                banking.Add(new BankAccount { Balance = 0 });
+                banking.Add(new BankAccount { AccountId = Guid.NewGuid(), Username = "rubie", Password = "rubie1234", Balance = 0 });
 
                 SaveDataToJsonFile();
             }
@@ -51,11 +51,67 @@ namespace OnlineBankingSystemDataService
                     .ToList();
             }
         }
-
+        
         public void Add(BankAccount bankaccount)
         {
+            RetrieveDataFromJsonFile();
+
+            if (bankaccount.AccountId == Guid.Empty)
+                bankaccount.AccountId = Guid.NewGuid();
+
             banking.Add(bankaccount);
             SaveDataToJsonFile();
+        }
+
+        
+        public List<BankAccount> GetAllAccounts()
+        {
+            RetrieveDataFromJsonFile();
+            return banking;
+        }
+
+        
+        public BankAccount? GetByBalance(double balance)
+        {
+            RetrieveDataFromJsonFile();
+            return banking.FirstOrDefault(t => t.Balance == balance);
+        }
+
+        
+        public void UpdateBalance(BankAccount account)
+        {
+            RetrieveDataFromJsonFile();
+
+            
+            var existing = banking.FirstOrDefault(x => x.AccountId == account.AccountId);
+
+            if (existing != null)
+            {
+                existing.Balance = account.Balance;
+                SaveDataToJsonFile();
+            }
+            else
+            {
+                throw new Exception("Account not found in JSON data!");
+            }
+        }
+
+        
+        public BankAccount? GetById(Guid id)
+        {
+            RetrieveDataFromJsonFile();
+            return banking.FirstOrDefault(x => x.AccountId == id);
+        }
+
+        public BankAccount? GetByUsername(string username)
+        {
+            RetrieveDataFromJsonFile();
+            return banking.FirstOrDefault(x => x.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public BankAccount? GetBalances(double balance)
+        {
+            return banking.FirstOrDefault(a => a.Balance == balance);
         }
 
         public List<BankAccount> GetBalance()
@@ -64,22 +120,6 @@ namespace OnlineBankingSystemDataService
             return banking;
         }
 
-        public BankAccount? GetBalances(double balances)
-        {
-            RetrieveDataFromJsonFile();
-            return banking.FirstOrDefault(t => t.Balance == balances);
-        }
-
-        public void UpdateBalance(BankAccount account)
-        {
-            RetrieveDataFromJsonFile();
-
-            if (banking.Count > 0)
-            {
-                banking[0].Balance = account.Balance;
-            }
-
-            SaveDataToJsonFile();
-        }
     }
 }
+

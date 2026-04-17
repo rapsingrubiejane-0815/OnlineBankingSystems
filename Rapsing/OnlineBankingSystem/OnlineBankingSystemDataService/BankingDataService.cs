@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,10 +15,10 @@ namespace OnlineBankingSystemDataService
         {
             _dataService = onlineBankingDataService;    
         }
-
-     
-
-    
+        public void Add(BankAccount account)
+        {
+            _dataService.Add(account);
+        }
 
         public BankAccount? GetBalances(double bal) 
         {
@@ -31,6 +32,17 @@ namespace OnlineBankingSystemDataService
         public void UpdateBalance(BankAccount account)
         {
             _dataService.UpdateBalance(account);
+        }
+        
+        public BankAccount? GetById(Guid id)
+        {
+            return _dataService.GetById(id);
+        }
+
+
+        public BankAccount? GetByUsername(string username)
+        {
+            return _dataService.GetByUsername(username);
         }
     }
 }

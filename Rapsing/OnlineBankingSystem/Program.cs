@@ -1,75 +1,102 @@
-﻿using System;
-using OnlineBankingSystemAppService;
+﻿using OnlineBankingSystemAppService;
+using OnlineBankingSystemDataService;
+using OnlineBankingSystemModels;
+using System;
 
-public class Program
+class Program
 {
-    static BankBusiness bank = new BankBusiness();
-
-    public static void Main()
+    static void Main(string[] args)
     {
-        int choice;
+        //var dataService = new BankingDataService();
+        //var business = new BankBusiness(dataService);
+        BankBusiness bb = new BankBusiness();
+        
+        BankAccount loggedInUser = null;
 
-        Console.WriteLine("-----ONLINE BANKING SYSTEM-----\n");
-
-        do
+        while (loggedInUser == null)
         {
-            DisplayMenu();
-            Console.Write("Enter a number from 1-6: ");
-            choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n1. Create Account");
+            Console.WriteLine("2. Login");
+            Console.Write("Choose option: ");
+            var choice = Console.ReadLine();
 
-            switch (choice)
+            Console.Write("Username: ");
+            string username = Console.ReadLine();
+
+            Console.Write("Password: ");
+            string password = Console.ReadLine();
+
+            try
             {
-                case 1:
-                    Console.Write("Enter amount to Deposit: ");
-                    double deposit = Convert.ToDouble(Console.ReadLine());
-                    bank.Deposit(deposit);
+                if (choice == "1")
+                {
+                    bb.Register(username, password);
+                    Console.WriteLine("Account created! Please login.");
+                }
+                else if (choice == "2")
+                {
+                    loggedInUser = bb.Login(username, password);
+                    Console.WriteLine($"Welcome, {loggedInUser.Username}!");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        bool running = true;
+
+        while (running)
+        {
+            Console.WriteLine("\n1. Deposit");
+            Console.WriteLine("2. Withdraw");
+            Console.WriteLine("3. Check Balance");
+            Console.WriteLine("4. Send Money");
+            Console.WriteLine("5. Exit");
+
+            var option = Console.ReadLine();
+
+            switch (option)
+            {
+                case "1":
+                    Console.Write("Amount: ");
+                    double dep = double.Parse(Console.ReadLine());
+                    bb.Deposit(dep);
+                    Console.WriteLine("Deposited!");
                     break;
 
-                case 2:
-                    Console.Write("Enter amount to Withdraw: ");
-                    double withdraw = Convert.ToDouble(Console.ReadLine());
-                    bank.Withdraw(withdraw);
+                case "2":
+                    Console.Write("Amount to withdraw: ");
+                    double wit = double.Parse(Console.ReadLine());
+                    bb.Withdraw(wit);
                     break;
 
-                case 3:
-                    bank.CheckBalance();
+                case "3":
+                    bb.CheckBalance();
                     break;
 
-                case 4:
-                    Console.Write("Enter recipient name: ");
-                    string recipient = Console.ReadLine();
-                    Console.Write("Enter amount to Send: ");
-                    double send = Convert.ToDouble(Console.ReadLine());
-                    bank.SendMoney(recipient, send);
+                case "4":
+                    Console.Write("Enter receiver username: ");
+                    string receiverUser = Console.ReadLine();
+
+                    Console.Write("Enter amount: ");
+                    double sendAmount = double.Parse(Console.ReadLine());
+
+                    try
+                    {
+                        bb.SendMoney(receiverUser, sendAmount);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                     break;
 
-                case 5:
-                    Console.Write("Enter sender name: ");
-                    string sender = Console.ReadLine();
-                    Console.Write("Enter amount received: ");
-                    double receive = Convert.ToDouble(Console.ReadLine());
-                    bank.ReceiveMoney(sender, receive);
-                    break;
-
-                case 6:
-                    Console.WriteLine("Thank you for Banking with us");
-                    break;
-
-                default:
-                    Console.WriteLine("Invalid Choice");
+                case "5":
+                    running = false;
                     break;
             }
-
-        } while (choice != 6);
-    }
-
-    public static void DisplayMenu()
-    {
-        Console.WriteLine("\n1. Deposit");
-        Console.WriteLine("2. Withdraw");
-        Console.WriteLine("3. Check Balance");
-        Console.WriteLine("4. Send Money");
-        Console.WriteLine("5. Receive Money");
-        Console.WriteLine("6. Exit");
+        }
     }
 }

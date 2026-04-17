@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineBankingSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b68f4a5e020945620f102d8686024b1823d471eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+024e2daac799f2be2a44ef1cbfde494152e447f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineBankingSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineBankingSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
