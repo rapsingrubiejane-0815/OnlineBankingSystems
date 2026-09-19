@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Rapsing",
+    "\\Rapsing\\OnlineBankingSystem",
+    "\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemAppService",
+    "\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemDataService"
+  ],
+  "SelectedNode": "\\Rapsing\\OnlineBankingSystem\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

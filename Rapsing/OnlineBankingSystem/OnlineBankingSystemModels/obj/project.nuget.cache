@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cvZ9s9fn83o=",
+  "dgSpecHash": "r3FV3EbcTms=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jonielyn\\OneDrive\\Documents\\OnlineBankingSystem\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Jonielyn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
-    "C:\\Users\\Jonielyn\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
-    "C:\\Users\\Jonielyn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Jonielyn\\OneDrive\\Desktop\\My Projects\\OnlineBankingSystem_old\\Rapsing\\OnlineBankingSystem\\OnlineBankingSystemModels\\OnlineBankingSystemModels.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

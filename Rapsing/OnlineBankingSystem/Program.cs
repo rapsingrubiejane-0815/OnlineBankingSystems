@@ -10,7 +10,7 @@ class Program
         //var dataService = new BankingDataService();
         //var business = new BankBusiness(dataService);
         BankBusiness bb = new BankBusiness();
-        
+
         BankAccount loggedInUser = null;
 
         while (loggedInUser == null)
@@ -30,7 +30,9 @@ class Program
             {
                 if (choice == "1")
                 {
-                    bb.Register(username, password);
+                    Console.Write("Email: ");
+                    string email = Console.ReadLine();
+                    bb.Register(username, password, email);
                     Console.WriteLine("Account created! Please login.");
                 }
                 else if (choice == "2")
@@ -39,10 +41,7 @@ class Program
                     Console.WriteLine($"Welcome, {loggedInUser.Username}!");
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
 
         bool running = true;
@@ -54,7 +53,7 @@ class Program
             Console.WriteLine("3. Check Balance");
             Console.WriteLine("4. Send Money");
             Console.WriteLine("5. Exit");
-
+            Console.Write("Choose option:");
             var option = Console.ReadLine();
 
             switch (option)
@@ -62,35 +61,26 @@ class Program
                 case "1":
                     Console.Write("Amount: ");
                     double dep = double.Parse(Console.ReadLine());
-                    bb.Deposit(dep);
-                    Console.WriteLine("Deposited!");
+                    bb.Deposit(loggedInUser.Username, dep);
                     break;
 
                 case "2":
                     Console.Write("Amount to withdraw: ");
                     double wit = double.Parse(Console.ReadLine());
-                    bb.Withdraw(wit);
+                    bb.Withdraw(loggedInUser.Username, wit);   
                     break;
 
                 case "3":
-                    bb.CheckBalance();
+                    bb.CheckBalance(loggedInUser.Username);     
                     break;
 
                 case "4":
                     Console.Write("Enter receiver username: ");
                     string receiverUser = Console.ReadLine();
-
                     Console.Write("Enter amount: ");
                     double sendAmount = double.Parse(Console.ReadLine());
-
-                    try
-                    {
-                        bb.SendMoney(receiverUser, sendAmount);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
+                    try { bb.SendMoney(loggedInUser.Username, receiverUser, sendAmount); }
+                    catch (Exception ex) { Console.WriteLine(ex.Message); }
                     break;
 
                 case "5":

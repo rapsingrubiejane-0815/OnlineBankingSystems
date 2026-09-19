@@ -4,22 +4,15 @@ using OnlineBankingSystemModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlineBankingSystem
 {
     public class OnlineBankingDBData : IOnlineBankingDataService
     {
-        private string connectionString
-            = "Data Source = localhost\\SQLEXPRESS; Initial Catalog = db_OnlineBanking; Integrated Security = True; TrustServerCertificate=True;";
-
-        private SqlConnection sqlConnection;
+        private string connectionString = "Data Source = localhost\\SQLEXPRESS; Initial Catalog = db_OnlineBanking; Integrated Security = True; TrustServerCertificate=True;";
 
         public OnlineBankingDBData()
         {
-            sqlConnection = new SqlConnection(connectionString);
             AddSeeds();
         }
 
@@ -31,58 +24,65 @@ namespace OnlineBankingSystem
             {
                 BankAccount onbank = new BankAccount
                 {
+                    AccountId = Guid.NewGuid(),
                     Username = "rubie",
                     Password = "rubie123",
+                    Email = "rubie@gmail.com",
                     Balance = 10.0
                 };
                 Add(onbank);
             }
         }
+
         public void Add(BankAccount onbanking)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                // FIXED: Added Email to the column list to match the 5 parameters below
                 string query = @"
-        INSERT INTO tbl_OnlineBanking (AccountId, Username, Password, Balance)
-        VALUES (@AccountId, @Username, @Password, @Balance)";
+                    INSERT INTO tbl_OnlineBanking (AccountId, Username, Password, Balance, Email)
+                    VALUES (@AccountId, @Username, @Password, @Balance, @Email)";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@AccountId", onbanking.AccountId);
+                    cmd.Parameters.AddWithValue("@Username", onbanking.Username);
+                    cmd.Parameters.AddWithValue("@Password", onbanking.Password);
+                    cmd.Parameters.AddWithValue("@Balance", onbanking.Balance);
+                    cmd.Parameters.AddWithValue("@Email", (object?)onbanking.Email ?? DBNull.Value);
 
-                cmd.Parameters.AddWithValue("@AccountId", onbanking.AccountId);
-                cmd.Parameters.AddWithValue("@Username", onbanking.Username);
-                cmd.Parameters.AddWithValue("@Password", onbanking.Password);
-                cmd.Parameters.AddWithValue("@Balance", onbanking.Balance);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
 
-
         public List<BankAccount> GetBalance()
         {
-            string selectStatement = "SELECT AccountId, Username, Password, Balance FROM tbl_OnlineBanking";
-
-            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
-
-            sqlConnection.Open();
-
-            SqlDataReader reader = selectCommand.ExecuteReader();
-
             var onlinebank = new List<BankAccount>();
+            string selectStatement = "SELECT AccountId, Username, Password, Balance, Email FROM tbl_OnlineBanking";
 
-            while (reader.Read())
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                BankAccount account = new BankAccount();
-                account.AccountId = Guid.Parse(reader["AccountId"].ToString());
-                account.Username = reader["Username"].ToString();
-                account.Password = reader["Password"].ToString();
-                account.Balance = Convert.ToDouble(reader["Balance"].ToString());
+                using (SqlCommand selectCommand = new SqlCommand(selectStatement, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader reader = selectCommand.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            BankAccount account = new BankAccount();
+                            account.AccountId = Guid.Parse(reader["AccountId"].ToString()!);
+                            account.Username = reader["Username"].ToString()!;
+                            account.Password = reader["Password"].ToString()!;
+                            account.Balance = Convert.ToDouble(reader["Balance"].ToString());
+                            account.Email = reader["Email"] == DBNull.Value ? null : reader["Email"].ToString();
 
-                onlinebank.Add(account);
+                            onlinebank.Add(account);
+                        }
+                    }
+                }
             }
-
-            sqlConnection.Close();
             return onlinebank;
         }
 
@@ -90,39 +90,47 @@ namespace OnlineBankingSystem
         {
             string updateStatement = "UPDATE tbl_OnlineBanking SET Balance = @Balance WHERE AccountId = @AccountId";
 
-            SqlCommand updateCommand = new SqlCommand(updateStatement, sqlConnection);
-            updateCommand.Parameters.AddWithValue("@AccountId", bankaccount.AccountId);
-            updateCommand.Parameters.AddWithValue("@Balance", bankaccount.Balance);
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand updateCommand = new SqlCommand(updateStatement, conn))
+                {
+                    updateCommand.Parameters.AddWithValue("@AccountId", bankaccount.AccountId);
+                    updateCommand.Parameters.AddWithValue("@Balance", bankaccount.Balance);
 
-            sqlConnection.Open();
-            updateCommand.ExecuteNonQuery();
-            sqlConnection.Close();
+                    conn.Open();
+                    updateCommand.ExecuteNonQuery();
+                }
+            }
         }
+
         public BankAccount? GetByUsername(string username)
         {
-            string query = "SELECT AccountId, Username, Password, Balance FROM tbl_OnlineBanking WHERE Username = @Username";
-
-            SqlCommand cmd = new SqlCommand(query, sqlConnection);
-            cmd.Parameters.AddWithValue("@Username", username);
-
-            sqlConnection.Open();
-
-            SqlDataReader reader = cmd.ExecuteReader();
-
+            string query = "SELECT AccountId, Username, Password, Balance, Email FROM tbl_OnlineBanking WHERE Username = @Username";
             BankAccount? account = null;
 
-            if (reader.Read())
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                account = new BankAccount
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    AccountId = Guid.Parse(reader["AccountId"].ToString()),
-                    Username = reader["Username"].ToString(),
-                    Password = reader["Password"].ToString(),
-                    Balance = Convert.ToDouble(reader["Balance"].ToString())
-                };
-            }
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    conn.Open();
 
-            sqlConnection.Close();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            account = new BankAccount
+                            {
+                                AccountId = Guid.Parse(reader["AccountId"].ToString()!),
+                                Username = reader["Username"].ToString()!,
+                                Password = reader["Password"].ToString()!,
+                                Balance = Convert.ToDouble(reader["Balance"].ToString()),
+                                Email = reader["Email"] == DBNull.Value ? null : reader["Email"].ToString(),
+                            };
+                        }
+                    }
+                }
+            }
             return account;
         }
 
@@ -133,25 +141,30 @@ namespace OnlineBankingSystem
 
         public BankAccount? GetById(Guid id)
         {
-            var selectStatement = "SELECT AccountId, Username, Password FROM tbl_OnlineBanking WHERE AccountId = @AccountId";
-            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
-            selectCommand.Parameters.AddWithValue("@AccountId", id.ToString());
-            sqlConnection.Open();
-            SqlDataReader reader = selectCommand.ExecuteReader();
+            var selectStatement = "SELECT AccountId, Username, Password, Balance, Email FROM tbl_OnlineBanking WHERE AccountId = @AccountId";
+            BankAccount account = new BankAccount();
 
-            var account = new BankAccount();
-
-            while (reader.Read())
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                account.AccountId = Guid.Parse(reader["AccountId"].ToString());
-                account.Username = reader["Username"].ToString();
-                account.Password = reader["Password"].ToString();
-            }
+                using (SqlCommand selectCommand = new SqlCommand(selectStatement, conn))
+                {
+                    selectCommand.Parameters.AddWithValue("@AccountId", id);
+                    conn.Open();
 
-            sqlConnection.Close();
+                    using (SqlDataReader reader = selectCommand.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            account.AccountId = Guid.Parse(reader["AccountId"].ToString()!);
+                            account.Username = reader["Username"].ToString()!;
+                            account.Password = reader["Password"].ToString()!;
+                            account.Balance = Convert.ToDouble(reader["Balance"].ToString());
+                            account.Email = reader["Email"] == DBNull.Value ? null : reader["Email"].ToString();
+                        }
+                    }
+                }
+            }
             return account;
         }
     }
-
-
 }

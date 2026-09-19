@@ -13,7 +13,9 @@ namespace OnlineBankingSystemAppService
 
         OnlineBankingJson jbank = new OnlineBankingJson();
 
-        public void Register(string username, string password)
+        EmailService emailService = new EmailService();
+
+        public void Register(string username, string password, string email)
         {
             var existing = onlineB.GetByUsername(username);
 
@@ -26,7 +28,8 @@ namespace OnlineBankingSystemAppService
               AccountId = Guid.NewGuid(),
               Username = username,
                 Password = password,
-                Balance = 0
+              Email = email,
+              Balance = 0
             };
             onlineB.Add(newacc);
             jbank.Add(newacc);
@@ -59,86 +62,78 @@ namespace OnlineBankingSystemAppService
         }
 
 
-        public void Deposit(double amount)
+        public void Deposit(string username, double amount)  
         {
-            if (amount > 0)
-            {
-                var accounts = onlineB.GetBalance();
-              //  var acc =  jbank.GetBalance();
-             //   var accs = acc.FirstOrDefault();
-                var account = accounts.FirstOrDefault();
+            if (amount <= 0) { Console.WriteLine("Invalid Amount"); return; }
 
-                if (account != null)
-                {
-                    account.Balance += amount;
+            var account = onlineB.GetByUsername(username);   
+            if (account == null) { Console.WriteLine("Account not found"); return; }
 
-                    onlineB.UpdateBalance(account);
-                    jbank.UpdateBalance(account);
+            account.Balance += amount;
+            onlineB.UpdateBalance(account);
+            jbank.UpdateBalance(account);
 
-                    Console.WriteLine("Amount Deposited Successfully");
-                    Console.WriteLine("New Balance: Php " + account.Balance);
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid Amount");
-            }
+            Console.WriteLine("Amount Deposited Successfully");
+            Console.WriteLine("New Balance: Php " + account.Balance);
 
+            try { emailService.SendEmail(account.Username, account.Email, "Deposit", amount, account.Balance); }
+            catch (Exception ex) { Console.WriteLine("Email not sent: " + ex.Message); }
         }
-        public void Withdraw(double amount)
+        public void Withdraw(string username, double amount)  
         {
-            var accounts = onlineB.GetBalance();
-         //   var acc = inn.GetBalance();
-            var account = accounts.FirstOrDefault();
-
-            if (account != null && amount > 0 && amount <= account.Balance)
-            {
-                account.Balance -= amount;
-
-                     onlineB.UpdateBalance(account);
-                     jbank.UpdateBalance(account);
-              
-
-                Console.WriteLine("Withdrawal Successful");
-            }
-            else
+            var account = onlineB.GetByUsername(username);
+            if (account == null || amount <= 0 || amount > account.Balance)
             {
                 Console.WriteLine("Insufficient Balance or Invalid Amount");
+                return;
             }
+
+            account.Balance -= amount;
+            onlineB.UpdateBalance(account);
+            jbank.UpdateBalance(account);
+
+            Console.WriteLine("Withdrawal Successful");
+
+            try { emailService.SendEmail(account.Username, account.Email, "Withdrawal", amount, account.Balance); }
+            catch (Exception ex) { Console.WriteLine("Email not sent: " + ex.Message); }
         }
 
-        public void CheckBalance()
+        public void CheckBalance(string username)  
         {
-            var balances = onlineB.GetBalance();
-            var Obalance = jbank.GetBalance();
-
-
-            foreach (var acc in balances)
-            {
-                Console.WriteLine("Current Balance: Php " + acc.Balance);
-            }
+            var acc = onlineB.GetByUsername(username);
+            if (acc != null) Console.WriteLine("Current Balance: Php " + acc.Balance);
         }
 
-       
-        public void SendMoney(string recipient, double amount)
+
+        public void SendMoney(string senderUsername, string recipient, double amount)
         {
-            var accounts = onlineB.GetBalance();
-            var acc = jbank.GetBalance();
-            var account = accounts.FirstOrDefault();
+            var sender = onlineB.GetByUsername(senderUsername);
+            var receiver = onlineB.GetByUsername(recipient);
 
-            if (account != null && amount > 0 && amount <= account.Balance)
-            {
-                account.Balance -= amount;
-
-                onlineB.UpdateBalance(account);
-                jbank.UpdateBalance(account);
-
-                Console.WriteLine("Successfully sent Php " + amount + " to " + recipient);
-            }
-            else
+            if (sender == null) { Console.WriteLine("Sender not found"); return; }
+            if (receiver == null) { Console.WriteLine("Receiver not found"); return; }
+            if (amount <= 0 || amount > sender.Balance)
             {
                 Console.WriteLine("Insufficient Balance or Invalid Amount");
+                return;
             }
+
+            sender.Balance -= amount;
+            receiver.Balance += amount;
+
+            onlineB.UpdateBalance(sender);
+            onlineB.UpdateBalance(receiver);
+            jbank.UpdateBalance(sender);
+            jbank.UpdateBalance(receiver);
+
+            Console.WriteLine($"Successfully sent Php {amount} to {recipient}");
+
+            // Notify both parties
+            try { emailService.SendEmail(sender.Username, sender.Email, "Money Transfer (Sent)", amount, sender.Balance); }
+            catch (Exception ex) { Console.WriteLine("Email not sent to sender: " + ex.Message); }
+
+            try { emailService.SendEmail(receiver.Username, receiver.Email, "Money Received", amount, receiver.Balance); }
+            catch (Exception ex) { Console.WriteLine("Email not sent to receiver: " + ex.Message); }
         }
     }
 }

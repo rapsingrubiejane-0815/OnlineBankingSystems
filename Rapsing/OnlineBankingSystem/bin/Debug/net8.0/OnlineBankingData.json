@@ -3,12 +3,63 @@
     "AccountId": "00000000-0000-0000-0000-000000000000",
     "Username": null,
     "Password": null,
-    "Balance": 2155
+    "Email": null,
+    "Balance": 1655
   },
   {
     "AccountId": "f3b31425-6edb-4373-bd2d-44a1fd55ccea",
     "Username": "zro",
     "Password": "12",
+    "Email": null,
     "Balance": 0
+  },
+  {
+    "AccountId": "ef7b48d3-3a15-4ebe-9a3f-6130a2538102",
+    "Username": "ashdres",
+    "Password": "ashdres123",
+    "Email": null,
+    "Balance": 0
+  },
+  {
+    "AccountId": "b29f3be2-33c8-43ca-8a21-6f34aa8a1c88",
+    "Username": "ashtine",
+    "Password": "ashtine123",
+    "Email": null,
+    "Balance": 0
+  },
+  {
+    "AccountId": "0ff6e88f-5979-4094-b82c-8e45bad24505",
+    "Username": "andres",
+    "Password": "andres123",
+    "Email": null,
+    "Balance": 0
+  },
+  {
+    "AccountId": "1fe586ac-1fc0-45e4-8fb6-b5d4c67df709",
+    "Username": "Alfred Lim",
+    "Password": "alfred123",
+    "Email": "alfredmanelim@gmail.com",
+    "Balance": 1000
+  },
+  {
+    "AccountId": "3377700c-643c-4115-ba1e-af21eafe2eca",
+    "Username": "Thea",
+    "Password": "thea123",
+    "Email": "mariethedelacruz@gmail.com",
+    "Balance": 1000
+  },
+  {
+    "AccountId": "007ecd56-a7d2-4897-b768-772c9d449996",
+    "Username": "stell",
+    "Password": "stell123",
+    "Email": "stell@gmail.com",
+    "Balance": 1000
+  },
+  {
+    "AccountId": "3a3b6dc0-2099-449c-a0ce-782d62876dbf",
+    "Username": "Jay Rapsing",
+    "Password": "jay123",
+    "Email": "jay@gmail.com",
+    "Balance": 1000
   }
 ]
